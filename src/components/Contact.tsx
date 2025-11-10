@@ -44,7 +44,7 @@ export default function Contact() {
         setStatus(null);
 
         try {
-            const response = await fetch('https://portfolio-react-4-8snz.onrender.com/send-email', {
+            const response = await fetch('http://localhost:5000/send-email', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData),
